@@ -1,1 +1,1 @@
-# rag_lab2_dataplat
+## Phạm Chí Nguyên - Lab 2

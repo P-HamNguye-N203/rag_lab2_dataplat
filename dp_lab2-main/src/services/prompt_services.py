@@ -1,21 +1,10 @@
 # services/prompt_services.py
-import openai
-from fastapi import HTTPException
 from qdrant_client import QdrantClient
 from src.config.settings import HTTP_500_INTERNAL_SERVER_ERROR
 from src.config.settings import MAX_NO_SEARCH_RESULTS_QDRANT
 from src.config.settings import QDRANT_COLLECTION
 from qdrant_client import QdrantClient
-from qdrant_client.http.models import Distance, VectorParams
-from qdrant_client.http import models
-from qdrant_client.http.models import PointStruct
-from langchain_community.vectorstores import Qdrant
-import openai
-from openai import OpenAI
-import pdfplumber
-from sentence_transformers import SentenceTransformer
 from google import genai
-from google.genai import types
 import google.generativeai as gg_genai
 
 

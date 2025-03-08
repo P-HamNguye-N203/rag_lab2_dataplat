@@ -16,7 +16,7 @@ OPENAI_API_KEY = read_secret_file(openai_api_key_file)
 QDRANT_API_KEY = read_secret_file(qdrant_api_key_file)
 QDRANT_URL = read_secret_file(qdrant_url_file)
 
-QDRANT_COLLECTION = "nguyen"
+QDRANT_COLLECTION = "nguyen_rag"
 OPENAI_EMBEDDING_MODEL = "text-embedding-004"
 OPENAI_GPT_MODEL = "gemini-2.0-flash"
 

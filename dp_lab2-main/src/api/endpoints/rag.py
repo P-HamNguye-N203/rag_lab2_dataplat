@@ -29,8 +29,8 @@ prompt_services = PromptServices(
 def get_answer_from_llm(query):
     try:
         embedding = prompt_services.get_embedding(query)
-        search_results = prompt_services.get_context(embedding, 1)
-        response = prompt_services.get_response_consecutive_points(query, search_results)
+        search_results = prompt_services.get_context(embedding)
+        response = prompt_services.get_response(query, search_results)
     except Exception as e:
         raise HTTPException(status_code=HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
